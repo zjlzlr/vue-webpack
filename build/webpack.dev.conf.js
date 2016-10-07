@@ -15,12 +15,12 @@ module.exports = merge(baseWebpackConfig, {
     loaders: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap })
   },
   // eval-source-map is faster for development
-  devtool: '#eval-source-map',
+  devtool: 'source-map',
   plugins: [
     new webpack.DefinePlugin({
       'process.env': config.dev.env
     }),
-    // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
+    // https://github.com/glenjamin/webpack-hot-middleware#installation--usage`
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
