@@ -1,6 +1,5 @@
 # vue-webpack
 
-> A Vue.js project
 vue2.0 + vue-router2.0 + vue-resource1.0 + vue-element-ui2.0 + webpack
 
 ## Build Setup
