@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h1>列表姓名：{{name}}</h1>
+    <span class="red">列表姓名：{{name}}</span>
     <h2>列表：{{age}}</h2>
     {{userList}}
     <button @click="golist">查看主页</button>
