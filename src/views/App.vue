@@ -3,6 +3,10 @@
     <h1 class="color">姓名：{{name}}</h1>
     <h2>{{age}}</h2>
     <button @click="goapp">查看列表</button>
+    <!-- elementui组件 -->
+    <el-button>默认按钮</el-button>
+    <el-button type="primary">主要按钮</el-button>
+    <el-button type="text">文字按钮</el-button>
 </div>
 </template>
 <script>

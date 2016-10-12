@@ -6,6 +6,9 @@ Vue.use(VueResource)
 import Index from './views/App.vue'
 import List from './views/List.vue'
 import Hello from './views/Hello.vue'
+import Element from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
+Vue.use(Element)
 import StyleCss from './css/style.less'
 /* eslint-disable no-new */
 /*new Vue({
