@@ -6,7 +6,7 @@ Vue.use(VueResource)
 import Index from './views/App.vue'
 import List from './views/List.vue'
 import Hello from './views/Hello.vue'
-import StyleCss from './css/style.css'
+import StyleCss from './css/style.less'
 /* eslint-disable no-new */
 /*new Vue({
   el: '#app',
