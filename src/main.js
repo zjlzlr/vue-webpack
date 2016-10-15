@@ -3,29 +3,22 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
-import Index from './views/App.vue'
+import Index from './views/Index.vue'
 import List from './views/List.vue'
 import Hello from './views/Hello.vue'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 Vue.use(Element)
 import StyleCss from './css/style.less'
-/* eslint-disable no-new */
-/*new Vue({
-  el: '#app',
-  render: h => h(App)
-})
-Vue.use(VueRouter);*/
-// 创建一个路由器实例
-
+import Main from './main.vue'
 // 每条路由规则应该映射到一个组件。这里的“组件”可以是一个使用 Vue.extend创建的组件构造函数，也可以是一个组件选项对象。
 // 稍后我们会讲解嵌套路由
 
 const router = new VueRouter({
 	routes: [
         {
-	      path: '/app',//访问地址
-	      name: 'app',//定义路由的名字。方便使用。
+	      path: '/index',//访问地址
+	      name: 'index',//定义路由的名字。方便使用。
 	      component: Index,//引用的组件名称，对应上面使用`import`导入的组件
           //component:require("components/app.vue")//还可以直接使用这样的方式也是没问题的。不过会没有import集中引入那么直观
 	    },
@@ -39,7 +32,7 @@ const router = new VueRouter({
 	      name: 'hello',//定义路由的名字。方便使用。
 	      component: Hello,//引用的组件名称，对应上面使用`import`导入的组件
 	    },
-	    { path: '*', redirect: '/app' }
+	    { path: '*', redirect: '/index' }
 	]
 });
 
@@ -50,5 +43,6 @@ Vue.config.debug = true;
 });*/
 // 现在我们可以启动应用了！
 const App = new Vue({
-  router
+  router,
+  ...Main
 }).$mount('#app')
