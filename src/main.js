@@ -44,5 +44,5 @@ Vue.config.debug = true;
 // 现在我们可以启动应用了！
 const App = new Vue({
   router,
-  ...Main
+  ...Main,
 }).$mount('#app')
