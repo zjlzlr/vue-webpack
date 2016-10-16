@@ -1,5 +1,5 @@
 <template>
-  <div class="app-navbar red">
+  <div class="app-navbar">
       this is title
   </div>
 </template>
@@ -12,7 +12,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='less'>
 .app-navbar {
-    height: 100px;
+    height: 80px;
     border: 1px solid;
 }
 </style>

@@ -1,8 +1,12 @@
-export Navbar from './Navbar';
 
-export Slidebar from './Slidebar';
 
-export AppMain from './AppMain';
+import Navbar from './Navbar';
 
-export Footbar from './Footbar';
+import Slidebar from './Slidebar';
+
+import AppMain from './AppMain';
+
+import Footbar from './Footbar';
+
+export{Navbar, Slidebar, AppMain, Footbar}
 

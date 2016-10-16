@@ -13,7 +13,6 @@ export default {
 <style scoped lang='less'>
 .app-main {
    display: inline-block;
-   border: 1px solid;
-   width: 79%;
+   height: 99%;
 }
 </style>
