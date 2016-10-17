@@ -1,5 +1,5 @@
 <template>
-  <div class="app-slidebar">
+  <aside class="app-slidebar slideInLeft">
      <el-row class="tac">
 		  <el-col :span="24">
 		    <el-menu default-active="index" class="el-menu-vertical-demo" router>
@@ -17,7 +17,7 @@
 		    </el-menu>
 		  </el-col>
 		</el-row>
-  </div>
+  </aside>
 </template>
 
 <script>
@@ -28,10 +28,28 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang='less' scoped>
+.slideInLeft {
+    animation-name: slideInLeft;
+}
 .app-slidebar {
-    border: 1px solid;
-    display: inline-block;
-    vertical-align: top;
-    height: 100%;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    padding: 20px 0 50px;
+    width: 180px;
+    min-width: 45px;
+    max-height: 100vh;
+    height: calc(100% -50px);
+    z-index: 1023;
+    background: #fff;
+    box-shadow: 0 2px 3px hsla(0,0%,7%,.1),0 0 0 1px hsla(0,0%,7%,.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 768px){
+	.app-sidebar {
+	    transform: translate3d(-180px,0,0);
+	}
 }
 </style>

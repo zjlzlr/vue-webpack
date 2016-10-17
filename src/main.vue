@@ -1,10 +1,8 @@
 <template>
     <div id='app'>
         <navbar></navbar>
-        <div class="app-content">
-            <slidebar class="left-content"></slidebar>
-            <app-main class="right-content"></app-main>
-        </div>
+        <slidebar class="left-content"></slidebar>
+        <app-main class="right-content"></app-main>
     </div>
 </template>
 <script>
