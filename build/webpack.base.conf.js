@@ -20,6 +20,8 @@ module.exports = {
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
       'model': path.resolve(__dirname, '../src/model'),
+      'views': path.resolve(__dirname, '../src/views'),
+      'css': path.resolve(__dirname, '../src/css'),
       'components': path.resolve(__dirname, '../src/components')
     }
   },
@@ -75,7 +77,7 @@ module.exports = {
     ]
   },
   eslint: {
-    formatter: require('eslint-friendly-formatter')
+    //formatter: require('eslint-friendly-formatter')
   },
   vue: {
     loaders: utils.cssLoaders(),

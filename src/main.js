@@ -3,15 +3,14 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
-import Index from './views/Index.vue'
+import Index from 'views/Index.vue'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 Vue.use(Element)
-import StyleCss from './css/style.less'
-import Main from './main.vue'
+import StyleCss from 'css/style.less'
+import Main from 'src/main.vue'
 // 每条路由规则应该映射到一个组件。这里的“组件”可以是一个使用 Vue.extend创建的组件构造函数，也可以是一个组件选项对象。
 // 稍后我们会讲解嵌套路由
-const lazyLoading = (name, index = false) => () => System.import("views/${name}${index ? '/index' : ''}.vue")
 const router = new VueRouter({
 	routes: [
         {

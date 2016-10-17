@@ -36,7 +36,7 @@ export default {
     top: 50px;
     left: 0;
     bottom: 0;
-    padding: 20px 0 50px;
+    margin-top: 1px;
     width: 180px;
     min-width: 45px;
     max-height: 100vh;
