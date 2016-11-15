@@ -74,7 +74,7 @@ const router = new VueRouter({
         {path: '', redirect:'/index'}
     ]
 });
-sync(store, router)
+//sync(store, router)
 //开启debug模式
 Vue.config.debug = true;
 /*router.redirect({//定义全局的重定向规则。全局的重定向会在匹配当前路径之前执行。
