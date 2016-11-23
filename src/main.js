@@ -32,21 +32,21 @@ const router = new VueRouter({
             children: [
                 {
                     name: 'itemone',
-                    path: '/itemone',
+                    path: 'itemone',
                     component: function (resolve) {
                         require(['./views/one/itemone.vue'], resolve)
                     }
                 },
                 {
                     name: 'itemtwo',
-                    path: '/itemtwo',
+                    path: 'itemtwo',
                     component: function(resolve) {
                         require(['./views/one/itemtwo.vue'], resolve)
                     }
                 },
                 {
                     name: 'itemthree',
-                    path: '/itemthree',
+                    path: 'itemthree',
                     component: function(resolve) {
                         require(['./views/one/itemthree.vue'], resolve)
                     }
