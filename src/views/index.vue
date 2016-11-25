@@ -45,6 +45,6 @@
 </script>
 <style scoped lang="less">
     .tabs{
-        widows: 100%;
+        width: 100%;
     }
 </style>
